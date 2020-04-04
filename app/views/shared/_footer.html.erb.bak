@@ -13,14 +13,8 @@
 # with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
 %>
 
-<div class="background">
-  <div class="container pt-9 pb-8">
-    <div class="row">
-      <div class="col-md-12 col-sm-12 text-center">
-        <h1 id="main-text" class="display-4 mb-4">Willkommen zu Training-Digital.</h1>
-         <p class="lead offset-lg-2 col-lg-8 col-sm-12 ">Digitalisierung als Chance!</p>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="text-center container"><img alt="wordcloud" width="60%" src="https://training-digital.online/asset/wordcloud.svg"></div>
+<footer class="footer pt-3">
+  <p class="text-center mb-1"><%= t("footer.powered_by", href: link_to(t("greenlight"), "https://bigbluebutton.org/2018/07/09/greenlight-2-0/", target: "_blank", rel: "noopener")).html_safe %> <%= Greenlight::Application::VERSION %></p>
+</footer>
+
+<%= render "shared/components/cookie_warning" %>
